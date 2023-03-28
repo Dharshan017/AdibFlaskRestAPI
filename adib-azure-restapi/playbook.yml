@@ -1,0 +1,42 @@
+---
+- name: Install Docker, clone source code, and build image
+  hosts: localhost
+  become: yes
+  vars:
+    docker_image_tag: 1
+    docker_image_name: adib-flaskapp
+    dockerfile_path: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
+
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Install Docker Compose with pip
+      become: true
+      pip:
+        name: docker-compose
+        state: present
+        
+    - name: Start Docker service
+      become: true
+      systemd:
+        name: docker
+        state: started
+
+    - name: Change Directory
+      shell: 
+        chdir: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
+
+    - name: Docker Container Stopping
+      docker_compose:
+        project_name: adib-flask-restapi-app
+        project_src: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
+        state: absent
+
+    - name: Docker Image Build and Container Creation
+      docker_compose:
+        project_name: adib-flask-restapi-app
+        project_src: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
+        state: present
