@@ -2,6 +2,7 @@
 - name: Install Docker, clone source code, and build image
   hosts: localhost
   become: yes
+  shell: cd /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
   vars:
     docker_image_tag: 1
     docker_image_name: adib-flaskapp
