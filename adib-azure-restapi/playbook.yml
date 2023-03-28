@@ -5,7 +5,7 @@
   vars:
     docker_image_tag: 1
     docker_image_name: adib-flaskapp
-    dockerfile_path: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi
+    dockerfile_path: /home/ubuntu/workspace/FlaskRestAPI-Deploy/adib-azure-restapi/
 
   tasks:
     - name: Install Docker
