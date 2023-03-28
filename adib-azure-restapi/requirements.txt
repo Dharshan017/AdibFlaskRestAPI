@@ -1,0 +1,8 @@
+flask
+requests
+adal
+oci
+Flask-Cors
+Flask-SQLAlchemy==3.0
+PyMySQL
+SQLAlchemy==1.4.39
