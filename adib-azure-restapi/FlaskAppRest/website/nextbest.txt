@@ -1,2 +1,0 @@
-Hi
-I am from outside, uploaded via azure python client
