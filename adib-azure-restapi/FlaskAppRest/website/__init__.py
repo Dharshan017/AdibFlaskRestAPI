@@ -11,8 +11,8 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
     CORS(app, supports_credentials=True)
-    from .views import views
-    from .insights import insights
+    from .data_accumulator import views
+    from .nbp_insights import insights
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(insights, url_prefix='/insights')
     # mysql-db connection

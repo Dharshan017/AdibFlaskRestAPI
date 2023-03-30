@@ -1,7 +1,7 @@
 from flask import Blueprint,request
 import json
-from .sparksubmit import createSparkApp,getSparkJobDetails
-from .flatfile import createPreAuthUrl
+from sparkModules.sparksubmit import createSparkApp,getSparkJobDetails
+from ociModules.object_store import createPreAuthUrl
 import datetime
 
 views = Blueprint('views', __name__)

@@ -4,8 +4,7 @@ from sqlalchemy import func
 from sqlalchemy.engine.reflection import Inspector
 from datetime import datetime,timedelta
 import json
-from . import db#,ma
-# from .insights_models import RankSchema
+from . import db
 
 insights = Blueprint('insights', __name__)
 

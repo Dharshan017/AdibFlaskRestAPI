@@ -1,0 +1,8 @@
+{
+    "dbhost": "adib-transcation.mysql.database.azure.com",
+    "dbname": "adib_transcations",
+    "dbuser": "adib_transcation_root",
+    "dbpassword": "Crayon@Data123#",
+    "tables": "ds_covered_card_transaction,ds_deposit_summary,ds_customer,ds_customer_deposit_account,ds_customer_covered_card,ds_customer_loan,dm_cardselector_analysis_cust_cards_5,salary_predictor9",
+    "pythonscript": "abfss://raw@dladibstorage.dfs.core.windows.net/"
+}
