@@ -2,8 +2,8 @@
 services:
   flask-app:
     build:
-      context: ../adib-azure-restapi
-      dockerfile: Dockerfile
+      context: ./
+      dockerfile: ./Dockerfile
     container_name: adibcontainer
     ports:
       - "2001:2001"
