@@ -1,4 +1,4 @@
-# version: "1.0"
+version: "3"
 services:
   flask-app:
     image: hyd.ocir.io/axricq4df2uf/marketplace-bim-onboarding:${FLASKAPP_TAG}
