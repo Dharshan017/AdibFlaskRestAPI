@@ -1,7 +1,7 @@
 # version: "1.0"
 services:
   flask-app:
-    image: hyd.ocir.io/axricq4df2uf/marketplace-bim-onboarding:${tag}
+    image: hyd.ocir.io/axricq4df2uf/marketplace-bim-onboarding:${FLASKAPP_TAG}
     build:
       context: ./
       dockerfile: ./Dockerfile
