@@ -1,5 +1,5 @@
 [DEFAULT]
-user=ocid1.user.oc1..aaaaaaaatvngq2664jmcr3uxbxos2x53zf5fnki67vn3icedt6ovlxcfz4ra
+user=ocid1.user.oc1..aaaaaaaavbgtgkolstxmejgpasgespohc6b7arf5alfkton7r575icaqjxrq
 fingerprint=7a:e3:7c:e3:ee:f7:79:4c:39:92:6d:e1:be:bf:4e:7d
 key_file=./oci/oci_api_key.pem
 tenancy=ocid1.tenancy.oc1..aaaaaaaalaagcgcry5jzbruizivwrby2ah6x4owtht5nvqc67piupviktaca
